@@ -1,7 +1,8 @@
 // main scss file
-@import '_config';
-@import '_news_square';
-@import '_navigationbr'; // header
+@import 'config';
+@import 'news_square';
+@import 'info';
+@import 'navigationbr'; // header
 .piece1 {
     color: $accent-color;
     h1 {
@@ -88,7 +89,12 @@
     display: grid;
     background-color: black;
     color: white;
-    padding: 2em 32em;
+    @include breakpoint(desktop) {
+        padding: 2em 32em;
+    }
+    @include breakpoint(laptop) {
+        padding: 2em 16em;
+    }
     a {
         text-decoration: none;
         color: white;

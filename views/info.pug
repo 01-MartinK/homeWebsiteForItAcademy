@@ -1,3 +1,43 @@
 extends default 
 block content 
-    
+    .spacer 
+        .profBoxDivider
+            .box
+                img(src="./images/prog_banner.jpg")
+                h1 
+                    b Tarkvara Arendaja 
+                h2 
+                    b ITA 
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed atque praesentium rem! Sint, at quis. Iusto ipsum, dolore, fugit, nihil optio pariatur eum maiores qui magnam labore molestiae velit amet.
+                button(onclick="toTp()")
+                    b vaata tunniplaani
+            .box
+                img(src="./images/system-banner.png")
+                h1 
+                    b IT-süsteemide spetsialist 
+                h2 
+                    b ITS 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi debitis accusamus odio facere dolorem dolores sint fugiat provident rerum ducimus expedita labore nemo ipsa, quia explicabo modi, quis eum optio.
+                button(onclick="toTp()")
+                    b vaata tunniplaani
+                
+        .center-small.profInfo 
+            h1 
+                b Õppimisel saad järgmised teadmised
+            .profBoxDivider
+                .box 
+                    p 
+                        b |
+                    p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui fuga deserunt id odio incidunt. Voluptates laboriosam, aliquid rem recusandae sed facilis eius distinctio adipisci quis quos voluptate iusto eum. Ex!
+                .box 
+                    p 
+                        b |
+                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit omnis hic, modi iure vitae perferendis! Nisi consequuntur autem consectetur repellat minima dolor natus quisquam maiores illum totam, distinctio, veniam dignissimos.
+        .center-mini.profInfo
+            h1 
+                b Sisseastumine 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores, doloribus fugit, distinctio ipsum quaerat rem, in rerum ullam reiciendis labore velit recusandae. Neque aspernatur unde illo commodi adipisci necessitatibus!
+            button(onclick='toSisse("ita")') 
+                b Tarkvara arendaja
+            button(onclick='toSisse("no")')
+                b IT-süsteemide spetsialist

@@ -50,32 +50,44 @@ h3 {
     padding: 10px;
 }
 
+.center-mini {
+    align-items: center;
+    text-align: center;
+    margin: 6em auto;
+    width: 60%;
+    padding: 10px;
+}
+
 // for smooth transitions between frames
 @mixin transition-ease {
     transition: all 0.15s ease-in-out;
 }
 
 // Screen size setting for different screen sizes
-@mixin media-md {
-    @media screen and (min-width: 768px) {
-        @content;
+@mixin breakpoint($point) {
+    @if $point==desktop {
+        @media (min-width: 70em) {
+            @content ;
+        }
     }
-}
-
-@mixin media-lg {
-    @media screen and (min-width: 1024px) {
-        @content;
+    @else if $point==laptop {
+        @media (min-width: 64em) {
+            @content ;
+        }
     }
-}
-
-@mixin media-xl {
-    @media screen and (min-width: 1600px) {
-        @content;
+    @else if $point==tablet {
+        @media (min-width: 50em) {
+            @content ;
+        }
     }
-}
-
-@mixin medial-xxl {
-    @media screen and (min-width: 1600px) {
-        @content;
+    @else if $point==phablet {
+        @media (min-width: 37.5em) {
+            @content ;
+        }
+    }
+    @else if $point==mobileonly {
+        @media (max-width: 37.5em) {
+            @content ;
+        }
     }
 }
