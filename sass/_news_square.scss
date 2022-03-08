@@ -1,12 +1,17 @@
 .newsGrid {
     display: inline-grid;
-    grid-template-columns: 3fr;
+    grid-template-columns: auto auto auto;
+    gap: 2em;
     .news-item {
-        width: 16em;
-        height: 16em;
+        box-shadow: 2px 2px 4px gray;
+        h1 {
+            position: relative;
+            text-align: left;
+            padding: 0.25em;
+        }
         img {
-            height: 16em;
-            width: 16em;
+            height: 20em;
+            width: 20em;
         }
     }
 }

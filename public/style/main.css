@@ -5,7 +5,7 @@
 
 body {
   background-color: #F2F3F4;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .spacer {
@@ -25,18 +25,25 @@ body {
 .newsGrid {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: 3fr;
-      grid-template-columns: 3fr;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 2em;
 }
 
 .newsGrid .news-item {
-  width: 16em;
-  height: 16em;
+  -webkit-box-shadow: 2px 2px 4px gray;
+          box-shadow: 2px 2px 4px gray;
+}
+
+.newsGrid .news-item h1 {
+  position: relative;
+  text-align: left;
+  padding: 0.25em;
 }
 
 .newsGrid .news-item img {
-  height: 16em;
-  width: 16em;
+  height: 20em;
+  width: 20em;
 }
 
 .navigationMenu {
@@ -139,8 +146,8 @@ body {
   position: absolute;
   width: 100%;
   height: 32em;
-  -webkit-transform: rotate(-5deg) translate(-420px, -260px);
-          transform: rotate(-5deg) translate(-420px, -260px);
+  -webkit-transform: rotate(-5deg) translate(-460px, -260px);
+          transform: rotate(-5deg) translate(-460px, -260px);
   z-index: -5;
   filter: blur(3px);
   -webkit-filter: blur(3px);
@@ -176,5 +183,78 @@ body {
 
 .piece3 a h2 {
   margin-bottom: 0.25em;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  background-color: black;
+  color: white;
+  padding: 2em 32em;
+}
+
+.footer h2 {
+  margin-bottom: 0.25em;
+  font-size: 1.5em;
+}
+
+.footer h3 {
+  margin-top: 0.15em;
+  font-size: 1em;
+}
+
+.footer .logo {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.footer .cont1 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.footer .cont2 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.footer .cont3 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.newsletterBox {
+  padding: 2em 0;
+  background-color: #EAEDED;
+  background-image: url("/images/voco-muster-02.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.newsletterBox button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: medium;
+  margin-top: 2.5em;
+  width: 16vh;
+  height: 4vh;
+}
+
+.newsletterBox button:hover {
+  cursor: pointer;
+  background-color: #1B2631;
+}
+
+.newsletterBox .content {
+  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */
