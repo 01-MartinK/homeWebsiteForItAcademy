@@ -1,16 +1,54 @@
 extends default 
 
 block content 
+    // include navigation from navigation.pug
     include navigation
+    // spacer
     .spacer
+
+    // first piece header
     .piece1.center
         h1 It-Academy 
         p Requires work, but the outcome is fabulous
         p #coding
+    
+    // second piece what we give
     .piece2.center
         div.background
-            img(src="./images/school1.jpg")
+            img(src="./images/kool.jpg")
         div.text
             h1 What we give 
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, non! Totam eum ducimus dicta amet perspiciatis quod corrupti, reiciendis quo neque eius necessitatibus, asperiores saepe odio debitis similique enim impedit iste suscipit quisquam molestias voluptatum? Eaque, velit enim maxime recusandae corrupti quo et voluptatibus, numquam provident consectetur, nobis laborum aut accusantium perferendis.
+    
+    // third piece professions
     .piece3.center
+        a(href="#").prof1 
+            h2 ITA
+            h1 Tarkvara Arendaja
+            
+
+        a(href="#").prof2 
+            h2 ITS 
+            h1 IT-Süsteemide Spetsialist
+    .piece4.center 
+        .newsGrid
+            .news-item
+                h1 uudis
+                img(src="./images/placeholder_square.png")
+    
+            .news-item
+                h1 uudis
+                img(src="./images/placeholder_square.png")
+    
+            .news-item
+                h1 uudis
+                img(src="./images/placeholder_square.png")
+    
+            .news-item
+                h1 uudis
+                img(src="./images/placeholder_square.png")
+    
+            .news-item
+                h1 uudis
+                img(src="./images/placeholder_square.png")
+    

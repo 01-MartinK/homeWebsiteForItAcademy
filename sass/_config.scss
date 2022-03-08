@@ -22,3 +22,7 @@ body {
     width: 60%;
     padding: 10px;
 }
+
+@mixin transition-ease {
+    transition: all 0.15s ease-in-out;
+}

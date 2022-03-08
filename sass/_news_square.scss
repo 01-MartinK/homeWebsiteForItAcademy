@@ -1,0 +1,12 @@
+.newsGrid {
+    display: inline-grid;
+    grid-template-columns: 3fr;
+    .news-item {
+        width: 16em;
+        height: 16em;
+        img {
+            height: 16em;
+            width: 16em;
+        }
+    }
+}
