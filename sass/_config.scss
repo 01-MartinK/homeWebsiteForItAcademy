@@ -10,7 +10,9 @@ $accent-color: #22c3f4;
 
 // set main body values
 body {
+    background-image: url('/images/backdrop-blurred.jpg');
     background-repeat: repeat;
+    background-size: 64em;
     background-color: #F2F3F4;
     font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

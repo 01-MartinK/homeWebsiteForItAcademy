@@ -4,7 +4,9 @@
 }
 
 body {
+  background-image: url("/images/backdrop-blurred.jpg");
   background-repeat: repeat;
+  background-size: 64em;
   background-color: #F2F3F4;
   font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -90,6 +92,9 @@ h3 {
 }
 
 .profBoxDivider .box {
+  background-color: gainsboro;
+  -webkit-box-shadow: 2px 2px 4px gray;
+          box-shadow: 2px 2px 4px gray;
   padding: 1em;
   border: 1px solid black;
   width: 35%;
@@ -125,8 +130,8 @@ h3 {
 }
 
 .profBoxDivider .box img {
-  -webkit-box-shadow: 2px 2px 4px black;
-          box-shadow: 2px 2px 4px black;
+  -webkit-box-shadow: 2px 2px 3px black;
+          box-shadow: 2px 2px 3px black;
   width: 100%;
   height: 12em;
 }
@@ -151,6 +156,37 @@ h3 {
 .profInfo button:hover {
   cursor: pointer;
   background-color: #85C1E9;
+}
+
+.newsBlock {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 3em;
+}
+
+.newsBlock .news__item {
+  display: block;
+  background-color: gainsboro;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  width: 28rem;
+  height: 20rem;
+  text-align: left;
+}
+
+.newsBlock .news__item img {
+  width: 100%;
+  height: 14rem;
 }
 
 .navigationMenu {

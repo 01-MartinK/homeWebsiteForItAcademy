@@ -1,0 +1,22 @@
+// scss file for news page
+.newsBlock {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 3em;
+    .news__item {
+        display: block;
+        background-color: gainsboro;
+        border: 1px solid black;
+        box-shadow: 2px 2px 4px black;
+        overflow: hidden;
+        width: 28rem;
+        height: 20rem;
+        text-align: left;
+        img {
+            width: 100%;
+            height: 14rem;
+        }
+    }
+}
