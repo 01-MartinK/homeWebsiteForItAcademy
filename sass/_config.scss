@@ -11,6 +11,10 @@ body {
     font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .spacer {
     margin: 5em;
 }
@@ -19,6 +23,14 @@ body {
     align-items: center;
     text-align: center;
     margin: 16em auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.center-small {
+    align-items: center;
+    text-align: center;
+    margin: 12em auto;
     width: 60%;
     padding: 10px;
 }

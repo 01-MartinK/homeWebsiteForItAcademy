@@ -1,51 +1,6 @@
 @import '_config';
 @import '_news_square';
-// navigation
-.navigationMenu {
-    z-index: 100;
-    overflow: hidden;
-    position: fixed;
-    display: flex;
-    top: 0;
-    width: 100%;
-    padding: 1em;
-    align-items: center;
-    margin: 0 0;
-    margin-bottom: 2em;
-    h1.l {
-        margin: auto;
-        color: $accent-color;
-    }
-    h1.r {
-        margin: auto;
-        color: $accent-color;
-    }
-    .linkGroup {
-        margin: auto;
-        margin-top: 0.5em;
-        text-align: right;
-        a {
-            color: $accent-color;
-            text-decoration: none;
-            font-size: large;
-            padding: 1em;
-            @include transition-ease;
-            &:hover {
-                border-bottom: 4px solid $accent-color;
-            }
-        }
-        a.none {
-            padding: 0;
-            &:hover {
-                color: none;
-                background-color: none;
-                border: none;
-            }
-        }
-    }
-}
-
-// header
+@import '_navigationbr'; // header
 .piece1 {
     color: $accent-color;
     h1 {
@@ -61,6 +16,17 @@
 .piece2 {
     display: flex;
     margin: auto;
+    .background {
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        height: 32em;
+        background-image: url('/images/kool.jpg');
+        background-size: cover;
+        background-position: center;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+    }
     .text {
         z-index: 1;
         border-left: 4px solid $accent-color;
@@ -122,6 +88,10 @@
     background-color: black;
     color: white;
     padding: 2em 32em;
+    a {
+        text-decoration: none;
+        color: white;
+    }
     h2 {
         margin-bottom: 0.25em;
         font-size: 1.5em;

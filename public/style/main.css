@@ -8,6 +8,10 @@ body {
   font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .spacer {
   margin: 5em;
 }
@@ -18,6 +22,16 @@ body {
           align-items: center;
   text-align: center;
   margin: 16em auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.center-small {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 12em auto;
   width: 60%;
   padding: 10px;
 }
@@ -61,6 +75,10 @@ body {
           align-items: center;
   margin: 0 0;
   margin-bottom: 2em;
+}
+
+.navigationMenu a {
+  color: #22c3f4;
 }
 
 .navigationMenu h1.l {
@@ -120,6 +138,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+}
+
+.piece2 .background {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 32em;
+  background-image: url("/images/kool.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 .piece2 .text {
@@ -191,6 +221,11 @@ body {
   background-color: black;
   color: white;
   padding: 2em 32em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer h2 {

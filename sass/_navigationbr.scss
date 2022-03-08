@@ -1,0 +1,47 @@
+// navigation
+.navigationMenu {
+    z-index: 100;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    align-items: center;
+    margin: 0 0;
+    margin-bottom: 2em;
+    a {
+        color: $accent-color;
+    }
+    h1.l {
+        margin: auto;
+        color: $accent-color;
+    }
+    h1.r {
+        margin: auto;
+        color: $accent-color;
+    }
+    .linkGroup {
+        margin: auto;
+        margin-top: 0.5em;
+        text-align: right;
+        a {
+            color: $accent-color;
+            text-decoration: none;
+            font-size: large;
+            padding: 1em;
+            @include transition-ease;
+            &:hover {
+                border-bottom: 4px solid $accent-color;
+            }
+        }
+        a.none {
+            padding: 0;
+            &:hover {
+                color: none;
+                background-color: none;
+                border: none;
+            }
+        }
+    }
+}
