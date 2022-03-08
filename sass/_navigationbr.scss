@@ -1,5 +1,6 @@
 // navigation
 .navigationMenu {
+    background-color: black;
     z-index: 100;
     overflow: hidden;
     position: fixed;
@@ -17,14 +18,26 @@
         margin: auto;
         color: $accent-color;
     }
-    h1.r {
-        margin: auto;
-        color: $accent-color;
+    bg {
+        background-image: url('/images/IT-kool.png');
+        background-position: center;
+        background-size: cover;
+        width: 15em;
+        height: 4em;
+    }
+    hg {
+        background-image: url('/images/IT-Akadeemia-white.jpg.png');
+        background-position: center;
+        background-size: cover;
+        width: 14em;
+        height: 4em;
+        transform: translate(-32px, 0);
     }
     .linkGroup {
         margin: auto;
         margin-top: 0.5em;
         text-align: right;
+        transform: translate(-32px, 16px);
         a {
             color: $accent-color;
             text-decoration: none;

@@ -4,6 +4,7 @@
 }
 
 body {
+  background-repeat: repeat;
   background-color: #F2F3F4;
   font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -56,11 +57,12 @@ a {
 }
 
 .newsGrid .news-item img {
-  height: 20em;
-  width: 20em;
+  height: 24em;
+  width: 24em;
 }
 
 .navigationMenu {
+  background-color: black;
   z-index: 100;
   overflow: hidden;
   position: fixed;
@@ -86,15 +88,30 @@ a {
   color: #22c3f4;
 }
 
-.navigationMenu h1.r {
-  margin: auto;
-  color: #22c3f4;
+.navigationMenu bg {
+  background-image: url("/images/IT-kool.png");
+  background-position: center;
+  background-size: cover;
+  width: 15em;
+  height: 4em;
+}
+
+.navigationMenu hg {
+  background-image: url("/images/IT-Akadeemia-white.jpg.png");
+  background-position: center;
+  background-size: cover;
+  width: 14em;
+  height: 4em;
+  -webkit-transform: translate(-32px, 0);
+          transform: translate(-32px, 0);
 }
 
 .navigationMenu .linkGroup {
   margin: auto;
   margin-top: 0.5em;
   text-align: right;
+  -webkit-transform: translate(-32px, 16px);
+          transform: translate(-32px, 16px);
 }
 
 .navigationMenu .linkGroup a {
@@ -145,11 +162,12 @@ a {
   left: 0%;
   width: 100%;
   height: 32em;
-  background-image: url("/images/kool.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(gainsboro), color-stop(transparent), to(gainsboro)), url("/images/kool.jpg");
+  background: linear-gradient(gainsboro, transparent, gainsboro), url("/images/kool.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 }
 
 .piece2 .text {

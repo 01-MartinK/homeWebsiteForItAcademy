@@ -21,11 +21,11 @@
         left: 0%;
         width: 100%;
         height: 32em;
-        background-image: url('/images/kool.jpg');
+        background: linear-gradient(gainsboro, transparent, gainsboro), url('/images/kool.jpg'), ;
         background-size: cover;
         background-position: center;
-        filter: blur(4px);
-        -webkit-filter: blur(4px);
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
     }
     .text {
         z-index: 1;
