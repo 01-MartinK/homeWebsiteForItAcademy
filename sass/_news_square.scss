@@ -1,7 +1,9 @@
+// News scss for news grid in main index
 .newsGrid {
     display: inline-grid;
     grid-template-columns: auto auto auto;
     gap: 2em;
+    // each item in grid
     .news-item {
         box-shadow: 2px 2px 4px gray;
         h1 {
@@ -10,8 +12,8 @@
             padding: 0.25em;
         }
         img {
-            height: 24em;
-            width: 24em;
+            height: 16em;
+            width: 16em;
         }
     }
 }

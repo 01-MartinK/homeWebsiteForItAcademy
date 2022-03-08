@@ -1,25 +1,38 @@
+// config file for settings and effects
 $primary-color: #DC7633;
 $secondary-color: #99A3A4;
 $accent-color: #22c3f4;
+// reset margin and padding in all elements
 * {
     margin: 0;
     padding: 0;
 }
 
+// set main body values
 body {
     background-repeat: repeat;
     background-color: #F2F3F4;
     font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+// remove unwanted a tag content
 a {
     text-decoration: none;
 }
 
+// add font weight
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+// space between
 .spacer {
     margin: 5em;
 }
 
+// class for centering and adding space around it
 .center {
     align-items: center;
     text-align: center;
@@ -28,6 +41,7 @@ a {
     padding: 10px;
 }
 
+// smaller than the above code
 .center-small {
     align-items: center;
     text-align: center;
@@ -36,6 +50,32 @@ a {
     padding: 10px;
 }
 
+// for smooth transitions between frames
 @mixin transition-ease {
     transition: all 0.15s ease-in-out;
+}
+
+// Screen size setting for different screen sizes
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin medial-xxl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
 }

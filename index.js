@@ -22,7 +22,25 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+// render news page
+app.get('/uudised', (req, res) => {
+    res.render('news');
+});
 
+// render info page
+app.get('/info', (req, res) => {
+    res.render('info');
+});
+
+// render tp page
+app.get('/tp', (req, res) => {
+    res.render('tp');
+});
+
+// render about page
+app.get('/meie', (req, res) => {
+    res.render('info');
+});
 
 const server = app.listen(3010, () => {
     console.log(`Express running -> PORT ${server.address().port}`)

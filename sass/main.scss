@@ -1,3 +1,4 @@
+// main scss file
 @import '_config';
 @import '_news_square';
 @import '_navigationbr'; // header
@@ -133,6 +134,7 @@
         margin-top: 2.5em;
         width: 16vh;
         height: 4vh;
+        @include transition-ease;
         &:hover {
             cursor: pointer;
             background-color: #1B2631;

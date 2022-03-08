@@ -13,6 +13,12 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
 .spacer {
   margin: 5em;
 }
@@ -57,8 +63,8 @@ a {
 }
 
 .newsGrid .news-item img {
-  height: 24em;
-  width: 24em;
+  height: 16em;
+  width: 16em;
 }
 
 .navigationMenu {
@@ -300,6 +306,8 @@ a {
   margin-top: 2.5em;
   width: 16vh;
   height: 4vh;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .newsletterBox button:hover {

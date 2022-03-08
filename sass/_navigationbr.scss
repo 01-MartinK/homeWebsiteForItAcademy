@@ -1,4 +1,4 @@
-// navigation
+// scss for the navbar
 .navigationMenu {
     background-color: black;
     z-index: 100;
@@ -14,10 +14,12 @@
     a {
         color: $accent-color;
     }
+    // send logo to left
     h1.l {
         margin: auto;
         color: $accent-color;
     }
+    // send logo to elft
     bg {
         background-image: url('/images/IT-kool.png');
         background-position: center;
@@ -25,6 +27,7 @@
         width: 15em;
         height: 4em;
     }
+    // send logo to right
     hg {
         background-image: url('/images/IT-Akadeemia-white.jpg.png');
         background-position: center;
@@ -33,6 +36,7 @@
         height: 4em;
         transform: translate(-32px, 0);
     }
+    // button group
     .linkGroup {
         margin: auto;
         margin-top: 0.5em;
