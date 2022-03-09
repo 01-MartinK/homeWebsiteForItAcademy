@@ -68,6 +68,9 @@ ul {
     h1 {
         margin-bottom: 0.1em;
         font-size: 3em;
+        @include breakpoint(mobileonly) {
+            font-size: x-large;
+        }
     }
     p {
         font-size: larger;
@@ -80,6 +83,9 @@ ul {
         margin: 1.5em;
         background-color: $accent-color;
         border: none;
+        @include breakpoint(mobileonly) {
+            width: 100%;
+        }
         &:hover {
             cursor: pointer;
             background-color: #85C1E9;

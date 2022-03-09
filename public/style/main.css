@@ -268,6 +268,12 @@ ul {
   font-size: 3em;
 }
 
+@media (max-width: 37.5em) {
+  .profInfo h1 {
+    font-size: x-large;
+  }
+}
+
 .profInfo p {
   font-size: larger;
   margin-bottom: 2em;
@@ -280,6 +286,12 @@ ul {
   margin: 1.5em;
   background-color: #22c3f4;
   border: none;
+}
+
+@media (max-width: 37.5em) {
+  .profInfo button {
+    width: 100%;
+  }
 }
 
 .profInfo button:hover {
@@ -311,6 +323,14 @@ ul {
   width: 48rem;
   height: 32rem;
   text-align: left;
+}
+
+.newsBlock .news__item h2 {
+  padding: 0.5em;
+}
+
+.newsBlock .news__item h3 {
+  padding: 0.5em;
 }
 
 .newsBlock .news__item img {
