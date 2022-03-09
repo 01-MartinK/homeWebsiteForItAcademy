@@ -1,0 +1,29 @@
+extends default
+
+block content
+    include navigation
+    .spacer
+
+    select(name='dropDown', id='peepo' onchange='clickme()')
+        each val in ['ITA19' , 'ITA20' , 'ITA21', 'ITS20', 'ITS21']
+            option=val
+
+    .table_timetable
+        table(style='width:100%', border: solid, text-align: center)
+            tr
+                th Ajavahemik
+                th Esmaspäev
+                th Teisipäev
+                th Kolmapäev
+                th Neljapäev
+                th Reede
+
+            each _,i in Array(9)
+                tr
+                    each __,i in Array(6)
+                        td
+
+
+
+
+    include scripts
