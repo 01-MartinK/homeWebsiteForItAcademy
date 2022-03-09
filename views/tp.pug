@@ -1,3 +1,29 @@
 extends default 
 block content 
-    
+    .containerq
+
+        h1 
+            b Näe meie selle nädala tunniplaane erinevatele IT alastele gruppidele
+
+        // dropdown for selecting class
+        select(name='dropDown', id='peepo' onchange='clickme()')
+            each val in ['ITA19' , 'ITA20' , 'ITA21', 'ITS20', 'ITS21']
+                option=val
+
+        // timetable
+        .table_timetable
+            table(style='width:100%',cellspacing="0", border: solid, text-align: center)
+                tr
+                    th Ajavahemik
+                    th Esmaspäev
+                    th Teisipäev
+                    th Kolmapäev
+                    th Neljapäev
+                    th Reede
+
+                each _,i in Array(9)
+                    tr.item
+                        each __,i in Array(6)
+                            td.item
+
+        script(src='../timetable/timetable.js')

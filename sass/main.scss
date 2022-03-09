@@ -3,6 +3,7 @@
 @import 'news_square';
 @import 'info';
 @import 'uudised';
+@import 'tp';
 @import 'navigationbr'; // header
 .piece1 {
     color: $accent-color;
@@ -13,6 +14,10 @@
     p {
         font-size: 1.5em;
     }
+}
+
+th {
+    border: 2px solid black;
 }
 
 // second piece what we give

@@ -175,6 +175,10 @@ h3 {
   height: 12em;
 }
 
+ul {
+  padding: 2em;
+}
+
 .profInfo h1 {
   margin-bottom: 1em;
 }
@@ -226,6 +230,45 @@ h3 {
 .newsBlock .news__item img {
   width: 100%;
   height: 14rem;
+}
+
+.containerq {
+  margin-top: 6em;
+  padding: 2em 2em;
+}
+
+.containerq #peepo {
+  background: #22c3f4;
+  border: none;
+  height: 4em;
+  width: 7em;
+  padding: 0.5em;
+  margin-bottom: 2em;
+}
+
+.containerq #peepo:hover {
+  border: none;
+  background-color: #85C1E9;
+}
+
+.containerq h1 {
+  margin-bottom: 2em;
+}
+
+.containerq table {
+  gap: 0;
+}
+
+.containerq table .item {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 0.5em;
+  background-color: #85C1E9;
+}
+
+.containerq table th {
+  background: #22c3f4;
+  padding: 1em;
 }
 
 .navigationMenu {
@@ -315,6 +358,10 @@ h3 {
 
 .piece1 p {
   font-size: 1.5em;
+}
+
+th {
+  border: 2px solid black;
 }
 
 .piece2 {

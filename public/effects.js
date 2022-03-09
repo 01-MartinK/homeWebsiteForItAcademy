@@ -12,7 +12,6 @@
         let _depth2 = `${25 - (_mouseX - _w) * 0.01}% ${25 - (_mouseY - _h) * 0.01}%`;
         let _depth3 = `${25 - (_mouseX - _w) * 0.01}% ${25 - (_mouseY - _h) * 0.01}%`;
         let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-        console.log(x);
         elem.style.backgroundPosition = x;
     }
 

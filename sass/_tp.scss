@@ -1,0 +1,33 @@
+// scss file for timetable
+.containerq {
+    margin-top: 6em;
+    padding: 2em 2em;
+    #peepo {
+        background: $accent-color;
+        border: none;
+        height: 4em;
+        width: 7em;
+        padding: 0.5em;
+        margin-bottom: 2em;
+        &:hover {
+            border: none;
+            background-color: #85C1E9;
+        }
+    }
+    h1 {
+        margin-bottom: 2em;
+    }
+    table {
+        gap: 0;
+        .item {
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            padding: 0.5em;
+            background-color: #85C1E9;
+        }
+        th {
+            background: $accent-color;
+            padding: 1em;
+        }
+    }
+}
