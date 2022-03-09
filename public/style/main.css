@@ -4,10 +4,6 @@
 }
 
 body {
-  background-image: url("/images/backdrop-blurred.jpg");
-  background-repeat: repeat;
-  background-size: 64em;
-  background-color: #F2F3F4;
   font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -23,6 +19,18 @@ h3 {
 
 .spacer {
   margin: 5em;
+}
+
+#parallax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  background-image: url("/images/backdrop-blurred.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-position: 50% 50%;
+  z-index: -1;
 }
 
 .center {
@@ -53,6 +61,37 @@ h3 {
   margin: 6em auto;
   width: 60%;
   padding: 10px;
+}
+
+.BeforeScroll {
+  display: none;
+}
+
+.AfterScroll {
+  display: block;
+  -webkit-animation: fadeEffect 1.5s;
+          animation: fadeEffect 1.5s;
+  /* fading effect takes 3s */
+}
+
+@-webkit-keyframes fadeEffect {
+  /* from 0 to full opacity */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  /* from 0 to full opacity */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .newsGrid {
@@ -116,10 +155,10 @@ h3 {
 .profBoxDivider .box button {
   margin: auto auto;
   display: block;
-  width: 26vh;
-  height: 8vh;
+  width: 24vh;
+  height: 6vh;
   font-size: large;
-  margin-top: 0.75em;
+  margin-top: 1em;
   background-color: #22c3f4;
   border: none;
 }
@@ -167,9 +206,9 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  gap: 3em;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 2em;
 }
 
 .newsBlock .news__item {
@@ -179,8 +218,8 @@ h3 {
   -webkit-box-shadow: 2px 2px 4px black;
           box-shadow: 2px 2px 4px black;
   overflow: hidden;
-  width: 28rem;
-  height: 20rem;
+  width: 48rem;
+  height: 32rem;
   text-align: left;
 }
 

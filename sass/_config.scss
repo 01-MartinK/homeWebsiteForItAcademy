@@ -10,10 +10,6 @@ $accent-color: #22c3f4;
 
 // set main body values
 body {
-    background-image: url('/images/backdrop-blurred.jpg');
-    background-repeat: repeat;
-    background-size: 64em;
-    background-color: #F2F3F4;
     font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -32,6 +28,18 @@ h3 {
 // space between
 .spacer {
     margin: 5em;
+}
+
+#parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background-image: url('/images/backdrop-blurred.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    z-index: -1;
 }
 
 // class for centering and adding space around it
@@ -58,6 +66,26 @@ h3 {
     margin: 6em auto;
     width: 60%;
     padding: 10px;
+}
+
+.BeforeScroll {
+    display: none;
+}
+
+.AfterScroll {
+    display: block;
+    animation: fadeEffect 1.5s;
+    /* fading effect takes 3s */
+}
+
+@keyframes fadeEffect {
+    /* from 0 to full opacity */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 // for smooth transitions between frames

@@ -3,16 +3,16 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: auto auto auto;
-    gap: 3em;
+    grid-template-columns: auto auto;
+    gap: 2em;
     .news__item {
         display: block;
         background-color: gainsboro;
         border: 1px solid black;
         box-shadow: 2px 2px 4px black;
         overflow: hidden;
-        width: 28rem;
-        height: 20rem;
+        width: 48rem;
+        height: 32rem;
         text-align: left;
         img {
             width: 100%;

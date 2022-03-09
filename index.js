@@ -39,7 +39,7 @@ app.get('/tp', (req, res) => {
 
 // render about page
 app.get('/meie', (req, res) => {
-    res.render('info');
+    res.render('meie');
 });
 
 const server = app.listen(3010, () => {
