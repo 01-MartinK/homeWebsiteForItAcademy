@@ -77,3 +77,26 @@
         }
     }
 }
+
+// timetable
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.btn:hover{
+    border-left: 3px solid blue;
+}
+
+// timetable
+
+table{
+    text-align: right;
+}
