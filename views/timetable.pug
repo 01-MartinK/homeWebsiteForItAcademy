@@ -8,6 +8,12 @@ block content
         each val in ['ITA19' , 'ITA20' , 'ITA21', 'ITS20', 'ITS21']
             option=val
 
+
+    label(for='week' onchange='clickme()')
+    input(id='week' type='week' name='week' value='2022-W01' onchange='clickme()')
+
+
+
     .table_timetable
         table(style='width:100%', border: solid, text-align: center)
             tr
