@@ -24,13 +24,32 @@ h3 {
 #parallax {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0%;
   background-image: url("/images/backdrop-blurred.jpg");
   background-repeat: repeat;
   background-position: center;
   background-position: 50% 50%;
   z-index: -1;
+}
+
+.parlx1 {
+  height: 170em;
+}
+
+.parlx2 {
+  height: 130em;
+}
+
+.parlx3 {
+  height: 175em;
+}
+
+.parlx4 {
+  height: 54em;
+}
+
+.parlx5 {
+  height: 85em;
 }
 
 .center {
@@ -180,11 +199,13 @@ ul {
 }
 
 .profInfo h1 {
-  margin-bottom: 1em;
+  margin-bottom: 0.1em;
+  font-size: 3em;
 }
 
 .profInfo p {
   font-size: larger;
+  margin-bottom: 2em;
 }
 
 .profInfo button {
@@ -269,6 +290,36 @@ ul {
 .containerq table th {
   background: #22c3f4;
   padding: 1em;
+}
+
+.cont {
+  margin-top: 8em;
+  padding: 2em 16em;
+}
+
+.cont h1 {
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+
+.cont h2 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+.cont p {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.cont .pic {
+  background: url("/images/about_banner.jpg");
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 16em;
 }
 
 .navigationMenu {

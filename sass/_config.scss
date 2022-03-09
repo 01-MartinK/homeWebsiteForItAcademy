@@ -33,13 +33,32 @@ h3 {
 #parallax {
     position: absolute;
     width: 100%;
-    height: 100%;
     top: 0%;
     background-image: url('/images/backdrop-blurred.jpg');
     background-repeat: repeat;
     background-position: center;
     background-position: 50% 50%;
     z-index: -1;
+}
+
+.parlx1 {
+    height: 170em;
+}
+
+.parlx2 {
+    height: 130em;
+}
+
+.parlx3 {
+    height: 175em;
+}
+
+.parlx4 {
+    height: 54em;
+}
+
+.parlx5 {
+    height: 85em;
 }
 
 // class for centering and adding space around it
