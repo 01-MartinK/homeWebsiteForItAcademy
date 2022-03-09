@@ -1,8 +1,14 @@
 // News scss for news grid in main index
 .newsGrid {
     display: inline-grid;
-    grid-template-columns: auto auto auto;
     gap: 2em;
+    @include breakpoint(desktop) {
+        grid-template-columns: auto auto auto;
+    }
+    // eac
+    @include breakpoint(mobileonly) {
+        grid-template-columns: auto;
+    }
     // each item in grid
     .news-item {
         box-shadow: 2px 2px 4px gray;

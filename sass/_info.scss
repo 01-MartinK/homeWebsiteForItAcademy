@@ -2,24 +2,40 @@
 .profBoxDivider {
     margin-top: 10em;
     display: flex;
-    justify-content: center;
     gap: 6em;
     overflow: hidden;
+    @include breakpoint(mobileonly) {
+        display: block;
+        gap: 1em;
+        margin-top: 5em;
+        overflow: visible;
+    }
+    justify-content: center;
     .box {
         background-color: gainsboro;
         box-shadow: 2px 2px 4px gray;
         padding: 1em;
-        border: 1px solid black;
         width: 35%;
+        @include breakpoint(mobileonly) {
+            padding: 0.5em;
+            width: 100%;
+        }
+        border: 1px solid black;
         text-align: center;
         h1 {
             color: $accent-color;
+            @include breakpoint(mobileonly) {
+                font-size: 1.5em;
+            }
         }
         h2 {
             margin-bottom: 1em;
         }
         p {
             font-size: larger;
+            @include breakpoint(mobileonly) {
+                font-size: medium;
+            }
         }
         button {
             margin: auto auto;
@@ -45,6 +61,7 @@
 
 ul {
     padding: 2em;
+    font-size: medium;
 }
 
 .profInfo {

@@ -5,6 +5,10 @@
     overflow: hidden;
     position: fixed;
     display: flex;
+    @include breakpoint(mobileonly) {
+        flex-direction: column;
+        position: relative;
+    }
     top: 0;
     width: 100%;
     padding: 1em;
@@ -42,6 +46,10 @@
         margin-top: 0.5em;
         text-align: right;
         transform: translate(-32px, 16px);
+        @include breakpoint(mobileonly) {
+            display: flex;
+            flex-direction: column;
+        }
         a {
             color: $accent-color;
             text-decoration: none;
@@ -53,6 +61,9 @@
             }
         }
         a.none {
+            @include breakpoint(mobileonly) {
+                display: none;
+            }
             padding: 0;
             &:hover {
                 color: none;

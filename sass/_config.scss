@@ -61,32 +61,6 @@ h3 {
     height: 85em;
 }
 
-// class for centering and adding space around it
-.center {
-    align-items: center;
-    text-align: center;
-    margin: 16em auto;
-    width: 60%;
-    padding: 10px;
-}
-
-// smaller than the above code
-.center-small {
-    align-items: center;
-    text-align: center;
-    margin: 12em auto;
-    width: 60%;
-    padding: 10px;
-}
-
-.center-mini {
-    align-items: center;
-    text-align: center;
-    margin: 6em auto;
-    width: 60%;
-    padding: 10px;
-}
-
 .BeforeScroll {
     display: none;
 }
@@ -138,5 +112,46 @@ h3 {
         @media (max-width: 37.5em) {
             @content ;
         }
+    }
+}
+
+// class for centering and adding space around it
+.center {
+    align-items: center;
+    text-align: center;
+    margin: 16em auto;
+    width: 60%;
+    padding: 10px;
+    @include breakpoint(mobileonly) {
+        margin: 8em auto;
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+// smaller than the above code
+.center-small {
+    align-items: center;
+    text-align: center;
+    margin: 12em auto;
+    width: 60%;
+    padding: 10px;
+    @include breakpoint(mobileonly) {
+        margin: 6em auto;
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+.center-mini {
+    align-items: center;
+    text-align: center;
+    margin: 6em auto;
+    width: 60%;
+    padding: 10px;
+    @include breakpoint(mobileonly) {
+        margin: 3em auto;
+        width: 100%;
+        padding: 5px;
     }
 }

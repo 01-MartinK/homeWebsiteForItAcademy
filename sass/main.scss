@@ -9,11 +9,20 @@
 .piece1 {
     color: $accent-color;
     h1 {
+        @include breakpoint(desktop) {
+            font-size: 3em;
+        }
+        @include breakpoint(laptop) {
+            font-size: 3em;
+        }
+        @include breakpoint(mobileonly) {
+            font-size: 2em;
+        }
         font-size: 3em;
         text-shadow: 2px 2px 4px #2471A3;
     }
     p {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 }
 
@@ -39,14 +48,29 @@ th {
     .text {
         z-index: 1;
         border-left: 4px solid $accent-color;
+        padding: 1em;
         margin: 5em;
+        @include breakpoint(mobileonly) {
+            border-left: none;
+            border-top: 2px solid $accent-color;
+            border-bottom: 2px solid $accent-color;
+            margin: 1em;
+        }
         padding: 1em;
         color: white;
         text-shadow: 2px 2px 2px black;
         h1 {
             margin-bottom: 2vh;
             text-align: left;
-            font-size: 2.5rem;
+            @include breakpoint(desktop) {
+                font-size: 3em;
+            }
+            @include breakpoint(laptop) {
+                font-size: 3em;
+            }
+            @include breakpoint(mobileonly) {
+                font-size: 1.5em;
+            }
         }
         p {
             font-size: 1.5em;
@@ -70,6 +94,10 @@ th {
 .piece3 {
     display: flex;
     gap: 6rem;
+    @include breakpoint(mobileonly) {
+        flex-direction: column;
+        gap: 0;
+    }
     a {
         text-decoration: none;
         background-color: $accent-color;
@@ -77,6 +105,12 @@ th {
         box-shadow: 1px 1px 4px black;
         width: 50%;
         padding: 1em;
+        @include breakpoint(mobileonly) {
+            font-size: 0.75em;
+            padding: 0;
+            width: 100%;
+            margin: 1em;
+        }
         @include transition-ease;
         &:hover {
             box-shadow: 0px 5px 8px black;
@@ -102,6 +136,9 @@ th {
     @include breakpoint(laptop) {
         padding: 2em 16em;
     }
+    @include breakpoint(mobileonly) {
+        padding: 3em;
+    }
     a {
         text-decoration: none;
         color: white;
@@ -113,22 +150,33 @@ th {
     h3 {
         margin-top: 0.15em;
         font-size: 1em;
+        @include breakpoint(mobileonly) {
+            margin-top: 0.5em;
+        }
     }
     .logo {
-        grid-column: 1;
-        grid-row: 1;
+        @include breakpoint(desktop) {
+            grid-column: 1;
+            grid-row: 1;
+        }
     }
     .cont1 {
-        grid-column: 2;
-        grid-row: 1;
+        @include breakpoint(desktop) {
+            grid-column: 2;
+            grid-row: 1;
+        }
     }
     .cont2 {
-        grid-column: 3;
-        grid-row: 1;
+        @include breakpoint(desktop) {
+            grid-column: 3;
+            grid-row: 1;
+        }
     }
     .cont3 {
-        grid-column: 4;
-        grid-row: 1;
+        @include breakpoint(desktop) {
+            grid-column: 4;
+            grid-row: 1;
+        }
     }
 }
 
